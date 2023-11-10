@@ -18,7 +18,7 @@ from sklearn.model_selection import GridSearchCV
 ```
 ### Step 2. Load the dataset and Convert the data into a pandas dataframe and assign it to diabete_df.
 ```python
-URL = "https://archive.ics.uci.edu/ml/machine-learning-databases/00296/dataset_diabetes.zip"
+URL = "XGBoost\xgboost_dataset02.csvs"
 diabete_df = pd.read_csv(URL, compression='zip', header=0, sep=',', quotechar='"')
 ```
 ### Step 3. Split the data into features and target "Outcome", then into training and testing sets with test size being 0.2.

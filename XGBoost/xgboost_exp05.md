@@ -18,7 +18,7 @@ from sklearn.model_selection import GridSearchCV
 ```
 ### Step 2. Load the dataset and Convert the data into a pandas dataframe and assign it to heart_df.
 ```python
-URL = "http://archive.ics.uci.edu/ml/machine-learning-databases/heart-disease/processed.cleveland.data"
+URL = "XGBoost\xgboost_dataset05.csv"
 column_names = ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal', 'output']
 heart_df = pd.read_csv(URL, header=None, names=column_names)
 ```

@@ -18,7 +18,7 @@ from sklearn.model_selection import GridSearchCV
 ```
 ### Step 2. Load the dataset and Convert the data into a pandas dataframe and assign it to depression_df.
 ```python
-URL = "{Dataset Link}"
+URL = "XGBoost\xgboost_dataset08.csv"
 depression_df = pd.read_csv(URL)
 ```
 ### Step 3. Split the data into features and target "depressed", then into training and testing sets with test size being 0.2.

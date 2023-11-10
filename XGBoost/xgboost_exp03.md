@@ -19,7 +19,7 @@ from sklearn.model_selection import GridSearchCV
 ```
 ### Step 2. Load the dataset and Convert the data into a pandas dataframe and assign it to penguins_df.
 ```python
-URL = "https://raw.githubusercontent.com/dataprofessor/data/master/penguins_cleaned.csv"
+URL = "XGBoost\xgboost_dataset03.csv"
 penguins_df = pd.read_csv(URL)
 ```
 ### Step 3. Split the data into features and target "Species", then into training and testing sets with test size being 0.3.

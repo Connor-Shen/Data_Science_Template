@@ -18,7 +18,7 @@ from sklearn.model_selection import GridSearchCV
 ```
 ### Step 2. Load the dataset and Convert the data into a pandas dataframe and assign it to salary_df.
 ```python
-URL = "https://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.data"
+URL = "XGBoost\xgboost_dataset04.csv"
 column_names = ['age', 'workclass', 'fnlwgt', 'education', 'education_num', 'marital_status', 'occupation', 'relationship', 'race', 'sex', 'capital_gain', 'capital_loss', 'hours_per_week', 'native_country', 'salary']
 salary_df = pd.read_csv(URL, header=None, names=column_names)
 ```
