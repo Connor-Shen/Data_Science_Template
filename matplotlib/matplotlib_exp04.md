@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 
 #### Step 2: Load the Dataset into a pandas DataFrame named `heart_df`.
 ```python
-heart_df = pd.read_csv('path_to_dataset.csv')  # Replace 'path_to_dataset.csv' with the actual file path
+heart_df = pd.read_csv('matplotlib\matplotlib_dataset04.csv')  # Replace 'path_to_dataset.csv' with the actual file path
 
 ```
 

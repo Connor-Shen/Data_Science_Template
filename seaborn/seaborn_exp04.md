@@ -8,7 +8,7 @@ import seaborn as sns
 
 ### Step 2. Load the dataset from into a pandas DataFrame named diabetes_df.
 ```python
-Dataset_Link = "your_dataset_url_here"  # Replace with the actual URL of the dataset
+Dataset_Link = "seaborn\seaborn_dataset04.csv"  # Replace with the actual URL of the dataset
 column_names = ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome']
 diabetes_df = pd.read_csv(Dataset_Link, names=column_names)
 ```

@@ -6,7 +6,7 @@ import seaborn as sns
 
 ### Step 2. Load the dataset from into a pandas DataFrame named house_df.
 ```python
-Dataset_Link = "your_dataset_url_here"  # Replace with the actual URL of the dataset
+Dataset_Link = "seaborn\seaborn_dataset06.csv"  # Replace with the actual URL of the dataset
 column_names = ['crim', 'zn', 'indus', 'chas', 'nox', 'rm', 'age', 'dis', 'rad', 'tax', 'ptratio', 'b', 'lstat', 'medv']
 house_df = pd.read_csv(Dataset_Link, names=column_names)
 

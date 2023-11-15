@@ -17,7 +17,7 @@ import seaborn as sns
 
 ### Step 2. Load the Dataset into a pandas DataFrame named 'cancer_df'.
 ```python
-cancer_df = pd.read_csv('path_to_dataset.csv')  # Replace 'path_to_dataset.csv' with the actual file path
+cancer_df = pd.read_csv('matplotlib\matplotlib_dataset05.csv')  # Replace 'path_to_dataset.csv' with the actual file path
 
 ```
 

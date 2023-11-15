@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt
 
 ### Step 2. Load the dataset from the URL into a pandas DataFrame named "penguins_df".
 ```python
-url = 
+url = "matplotlib\matplotlib_dataset03.csv"
 penguins_df = pd.read_csv(url, sep=';')
 ```
 

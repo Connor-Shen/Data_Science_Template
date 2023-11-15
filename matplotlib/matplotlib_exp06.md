@@ -16,7 +16,7 @@ import seaborn as sns
 ```
 ### Step 2: Load the Dataset named `boston_df`
 ```python
-boston_df = pd.read_csv('path_to_boston_dataset.csv')  # Replace with the actual file path
+boston_df = pd.read_csv('matplotlib\matplotlib_dataset06.csv')  # Replace with the actual file path
 
 ```
 
