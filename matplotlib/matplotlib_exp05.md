@@ -1,3 +1,11 @@
+---
+jupyter:
+  title: Plotting tasks using matplotlib
+  dataset: cancer dataset
+  difficulty: Middle
+  module: matplotlib
+  idx: 5
+---
 
 ### Step 1. Import Required Python Packages
 ```python

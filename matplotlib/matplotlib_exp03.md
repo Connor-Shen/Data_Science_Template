@@ -1,10 +1,19 @@
+---
+jupyter:
+  title: Plotting tasks using matplotlib
+  dataset: penguins dataset
+  difficulty: middle
+  module: matplotlib
+  idx: 3
+---
+
 ### Step 1. Import required python packages.
 ```python
 import pandas as pd
 import matplotlib.pyplot as plt
 ```
 
-### Step 2. Load the dataset from the URL "https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-red.csv" into a pandas DataFrame named "penguins_df".
+### Step 2. Load the dataset from the URL into a pandas DataFrame named "penguins_df".
 ```python
 url = 
 penguins_df = pd.read_csv(url, sep=';')

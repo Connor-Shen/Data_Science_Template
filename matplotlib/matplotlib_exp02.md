@@ -1,3 +1,12 @@
+---
+jupyter:
+  title: Plotting tasks using matplotlib
+  dataset: wine quality dataset
+  difficulty: EASY
+  module: matplotlib
+  idx: 2
+---
+
 ### Step 1. Import required python packages.
  ```python
 import pandas as pd

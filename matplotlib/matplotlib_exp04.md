@@ -1,3 +1,12 @@
+---
+jupyter:
+  title: Plotting tasks using matplotlib
+  dataset: heart dataset
+  difficulty: Middle
+  module: matplotlib
+  idx: 4
+---
+
 
 #### Step 1: Import Required Python Packages
 ```python

@@ -1,3 +1,12 @@
+---
+jupyter:
+  title: Plotting tasks using matplotlib
+  dataset: house price dataset
+  difficulty: Middle
+  module: matplotlib
+  idx: 6
+---
+
 ### Step 1: Import Required Python Packages
 ```python
 import pandas as pd

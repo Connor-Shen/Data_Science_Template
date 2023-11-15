@@ -1,3 +1,12 @@
+---
+jupyter:
+  title: Plotting tasks using matplotlib
+  dataset: auto-mpg dataset
+  difficulty: EASY
+  module: matplotlib
+  idx: 1
+---
+
 ### Step 1. Import required python packages.
  ```python
 import pandas as pd
