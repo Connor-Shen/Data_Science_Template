@@ -32,9 +32,9 @@ heart_df['age'].plot(kind='line', title='Line plot of Age', xlabel='Patient Inde
 plt.show()
 ```
 
-#### Step 5: Create a histogram of the "cholesterol" column, using title = "Histogram of Cholesterol", xlabel = "Cholesterol (mg/dl)", ylabel = "Frequency", figsize=(10,6), bins=30, color='green', alpha=0.7.
+#### Step 5: Create a histogram of the "chol" column, using title = "Histogram of Cholesterol", xlabel = "Cholesterol (mg/dl)", ylabel = "Frequency", figsize=(10,6), bins=30, color='green', alpha=0.7.
 ```python
-heart_df['cholesterol'].plot(kind='hist', title='Histogram of Cholesterol', xlabel='Cholesterol (mg/dl)', ylabel='Frequency', figsize=(10, 6), bins=30, color='green', alpha=0.7)
+heart_df['chol'].plot(kind='hist', title='Histogram of Cholesterol', xlabel='Cholesterol (mg/dl)', ylabel='Frequency', figsize=(10, 6), bins=30, color='green', alpha=0.7)
 plt.show()
 
 ```
@@ -75,7 +75,7 @@ plt.show()
 
 #### Step 11: Create an area plot for "cholesterol" and "blood pressure", using title = "Area Plot of Cholesterol and Blood Pressure", xlabel = "Patients", ylabel = "Values", figsize=(10,6), alpha=0.4.
 ```python
-heart_df.plot.area(y=['cholesterol', 'blood pressure'], title='Area Plot of Cholesterol and Blood Pressure', xlabel='Patients', ylabel='Values', figsize=(10, 6), alpha=0.4)
+heart_df.plot.area(y=['chol', 'blood pressure'], title='Area Plot of Cholesterol and Blood Pressure', xlabel='Patients', ylabel='Values', figsize=(10, 6), alpha=0.4)
 plt.show()
 
 ```
@@ -93,13 +93,13 @@ plt.show()
 fig, axs = plt.subplots(2, figsize=(10, 10))
 
 # First subplot: Linear scale plot of blood pressure
-axs[0].plot(heart_df['blood_pressure'], marker='o')
+axs[0].plot(heart_df['blood pressure'], marker='o')
 axs[0].set_title("Linear Scale Plot of Blood Pressure")
 axs[0].set_xlabel("Patients")
 axs[0].set_ylabel("Blood Pressure (mm Hg)")
 
 # Second subplot: Logarithmic scale plot of blood pressure
-axs[1].plot(heart_df['blood_pressure'], marker='o')
+axs[1].plot(heart_df['blood pressure'], marker='o')
 axs[1].set_yscale('log')
 axs[1].set_title("Logarithmic Scale Plot of Blood Pressure")
 axs[1].set_xlabel("Patients")

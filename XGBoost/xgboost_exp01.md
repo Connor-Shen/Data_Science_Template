@@ -18,7 +18,7 @@ from sklearn.model_selection import GridSearchCV
 ```
 ### Step 2. Load the dataset and Convert the data into a pandas dataframe and assign it to iris_df.
 ```python
-URL = "https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data"
+URL = "https://www.gairuo.com/file/data/dataset/iris.data"
 column_names = ['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'species']
 iris_df = pd.read_csv(URL, header=None, names=column_names)
 ```
