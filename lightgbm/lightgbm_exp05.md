@@ -19,7 +19,7 @@ from sklearn.model_selection import GridSearchCV
 
 ### Step 2. Load the dataset from a URL and Convert the data into a pandas dataframe and assign it to 'heart_df'.
 ```python
-dataset_url = "https://archive.ics.uci.edu/ml/machine-learning-databases/heart-disease/processed.cleveland.data"
+dataset_url = "lightgbm\lightgbm_dataset05.csv"
 column_names = ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal', 'num']
 heart_df = pd.read_csv(dataset_url, names=column_names)
 # Replace '?' with NaN and drop rows with NaN values for simplicity

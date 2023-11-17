@@ -20,7 +20,7 @@ import numpy as np
 
 ### Step 2. Load the dataset from a URL and Convert the data into a pandas dataframe and assign it to 'abalone_df'.
 ```python
-dataset_url = "https://archive.ics.uci.edu/ml/machine-learning-databases/abalone/abalone.data"
+dataset_url = "lightgbm\lightgbm_dataset08.csv"
 column_names = ['Sex', 'Length', 'Diameter', 'Height', 'Whole weight', 'Shucked weight', 'Viscera weight', 'Shell weight', 'Rings']
 abalone_df = pd.read_csv(dataset_url, names=column_names)
 abalone_df = pd.get_dummies(abalone_df, columns=['Sex'])  # One-hot encoding for categorical variable 'Sex'

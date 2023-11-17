@@ -20,7 +20,7 @@ import numpy as np
 
 ### Step 2. Load the dataset from a URL and Convert the data into a pandas dataframe and assign it to 'auto_df'.
 ```python
-dataset_url = "https://archive.ics.uci.edu/ml/machine-learning-databases/autos/imports-85.data"
+dataset_url = "lightgbm\lightgbm_dataset06.csv"
 column_names = ['symboling', 'normalized_losses', 'make', 'fuel_type', 'aspiration', 'num_doors', 'body_style', 'drive_wheels', 'engine_location', 'wheel_base', 'length', 'width', 'height', 'curb_weight', 'engine_type', 'num_cylinders', 'engine_size', 'fuel_system', 'bore', 'stroke', 'compression_ratio', 'horsepower', 'peak_rpm', 'city_mpg', 'highway_mpg', 'price']
 auto_df = pd.read_csv(dataset_url, names=column_names)
 auto_df = auto_df.replace('?', np.nan).dropna()  # Replace '?' with NaN and drop rows with NaN values

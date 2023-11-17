@@ -17,9 +17,9 @@ import matplotlib.pyplot as plt
 from sklearn.model_selection import GridSearchCV
 ```
 
-### Step 2. Load the dataset from https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-red.csv and Convert the data into a pandas dataframe and assign it to wine_df.
+### Step 2. Load the dataset from lightgbm\lightgbm_dataset01.csv and Convert the data into a pandas dataframe and assign it to wine_df.
 ```python
-URL = "https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-red.csv"
+URL = "lightgbm\lightgbm_dataset02.csv"
 wine_df = pd.read_csv(URL, sep=';')
 ```
 

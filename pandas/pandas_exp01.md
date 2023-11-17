@@ -14,10 +14,10 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 ```
 
-### Step 2. Load the dataset from the URL into a pandas DataFrame named `wine_df`.
+### Step 2. Load the dataset from the path into a pandas DataFrame named `wine_df`.
 ```python
-url = "https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-red.csv"
-wine_df = pd.read_csv(url, sep=';')
+path = "pandas\pandas_dataset01.csv"
+wine_df = pd.read_csv(path, sep=';')
 ```
 
 ### Step 3. Calculate and display the number of missing values in each column of the DataFrame `wine_df`.

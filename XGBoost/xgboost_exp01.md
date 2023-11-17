@@ -18,9 +18,8 @@ from sklearn.model_selection import GridSearchCV
 ```
 ### Step 2. Load the dataset and Convert the data into a pandas dataframe and assign it to iris_df.
 ```python
-URL = "https://www.gairuo.com/file/data/dataset/iris.data"
-column_names = ['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'species']
-iris_df = pd.read_csv(URL, header=None, names=column_names)
+URL = "xgboost\xgboost_dataset01.csv"
+iris_df = pd.read_csv(URL)
 ```
 ### Step 3. Split the data into features and target "species", then into training and testing sets with test size being 0.2.
 ```python

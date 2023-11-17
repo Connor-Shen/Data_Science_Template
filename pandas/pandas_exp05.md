@@ -20,8 +20,8 @@ import numpy as np
 ### Step 2. Load the dataset from the URL into a pandas DataFrame named "df".
 (Note: You didn't provide a specific URL for this dataset, so I'm using a placeholder. Please replace it with the actual URL.)
 ```python
-URL = "YOUR_DATASET_URL_HERE"
-df = pd.read_csv("pandas\pandas_dataset05.xlsx")
+
+df = pd.read_excel("pandas\pandas_dataset05.xlsx")
 ```
 
 ### Step 3. Calculate and display the number of missing values in each column of the DataFrame "df".

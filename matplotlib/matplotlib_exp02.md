@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt
 
 ### Step 2. Load the dataset from the URL "https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-red.csv" into a pandas DataFrame named "wine_df".
 ```python
-url = "https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-red.csv"
+url = "matplotlib\matplotlib_dataset02.csv"
 wine_df = pd.read_csv(url, sep=';')
 ```
 

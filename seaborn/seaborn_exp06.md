@@ -1,3 +1,12 @@
+---
+jupyter:
+  title: Plotting tasks using seaborn
+  dataset: boston house dataset
+  difficulty: Middle
+  module: seaborn
+  idx: 6
+---
+
 ### Step 1. Import necessary libraries.
 ```python
 import pandas as pd

@@ -1,3 +1,11 @@
+---
+jupyter:
+  title: Plotting tasks using seaborn
+  dataset: iris dataset
+  difficulty: EASY
+  module: seaborn
+  idx: 1
+---
 
 ### Step 1. Import necessary libraries.
 ```python
@@ -5,11 +13,10 @@ import pandas as pd
 import seaborn as sns
 ```
 
-### Step 2. Load the dataset from "https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data".
+### Step 2. Load the dataset from path.
 ```python
-url = "https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data"
-column_names = ["sepal_length", "sepal_width", "petal_length", "petal_width", "class"]
-iris_df = pd.read_csv(url, names=column_names)
+url = "seaborn\seaborn_dataset01.csv"
+iris_df = pd.read_csv(url)
 ```
 
 ### Step 3. Display the first 5 rows of iris_df.

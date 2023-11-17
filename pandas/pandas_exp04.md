@@ -19,9 +19,9 @@ from scipy.stats import zscore
 ```
 
 ### Step 2. Load the dataset from the URL into a pandas DataFrame named "df".
-.
+
 ```python
-df = pd.read_csv("pandas\pandas_dataset04.xlsx")
+df = pd.read_excel("pandas\pandas_dataset04.xlsx")
 ```
 
 ### Step 3. Calculate and display the number of missing values in each column of the DataFrame "df".

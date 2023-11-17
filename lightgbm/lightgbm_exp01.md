@@ -17,9 +17,9 @@ import matplotlib.pyplot as plt
 from sklearn.model_selection import GridSearchCV
 ```
 
-### Step 2. Load the dataset from https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data and Convert the data into a pandas dataframe and assign it to iris_df.
+### Step 2. Load the dataset from path and Convert the data into a pandas dataframe and assign it to iris_df.
 ```python
-URL = "https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data"
+URL = "lightgbm\lightgbm_dataset01.csv"
 column_names = ['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'species']
 iris_df = pd.read_csv(URL, header=None, names=column_names)
 ```

@@ -1,3 +1,11 @@
+---
+jupyter:
+  title: Plotting tasks using seaborn
+  dataset: diabetes dataset
+  difficulty: Middle
+  module: seaborn
+  idx: 4
+---
 
 ### Step 1. Import necessary libraries.
 ```python

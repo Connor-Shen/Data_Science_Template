@@ -19,7 +19,7 @@ from sklearn.model_selection import GridSearchCV
 
 ### Step 2. Load the dataset from a URL and Convert the data into a pandas dataframe and assign it to 'cancer_df'.
 ```python
-dataset_url = "https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/wdbc.data"
+dataset_url = "lightgbm\lightgbm_dataset03.csv"
 column_names = ['ID', 'Diagnosis', 'Radius_mean', 'Texture_mean', 'Perimeter_mean', 'Area_mean', 'Smoothness_mean', 'Compactness_mean', 'Concavity_mean', 'Concave_points_mean', 'Symmetry_mean', 'Fractal_dimension_mean', 'Radius_se', 'Texture_se', 'Perimeter_se', 'Area_se', 'Smoothness_se', 'Compactness_se', 'Concavity_se', 'Concave_points_se', 'Symmetry_se', 'Fractal_dimension_se', 'Radius_worst', 'Texture_worst', 'Perimeter_worst', 'Area_worst', 'Smoothness_worst', 'Compactness_worst', 'Concavity_worst', 'Concave_points_worst', 'Symmetry_worst', 'Fractal_dimension_worst']
 cancer_df = pd.read_csv(dataset_url, names=column_names)
 cancer_df = cancer_df.drop('ID', axis=1)  # Drop the ID column as it's not a feature

@@ -23,9 +23,6 @@ import torch.optim as optim
 
 ## Step 2. Load the dataset.
 
-You can download the dataset from its hosting URL:
-
-Dataset Link: [Sentiment140 Dataset Download](http://cs.stanford.edu/people/alecmgo/trainingandtestdata.zip)
 
 ```python
 # After downloading and unzipping, load the dataset

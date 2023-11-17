@@ -19,7 +19,7 @@ from sklearn.model_selection import GridSearchCV
 
 ### Step 2. Load the dataset from a URL and Convert the data into a pandas dataframe and assign it to 'diabetes_df'.
 ```python
-dataset_url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.data.csv"
+dataset_url = "lightgbm\lightgbm_dataset04.csv"
 column_names = ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome']
 diabetes_df = pd.read_csv(dataset_url, names=column_names)
 ```

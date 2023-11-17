@@ -1,3 +1,11 @@
+---
+jupyter:
+  title: Plotting tasks using seaborn
+  dataset: wine dataset
+  difficulty: EASY
+  module: seaborn
+  idx: 2
+---
 
 ### Step 1. Import necessary libraries.
 ```python
@@ -8,7 +16,7 @@ import seaborn as sns
 
 ### Step 2. Load the dataset from the URL "https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-red.csv" into a pandas DataFrame named "wine_df".
 ```python
-url = "https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-red.csv"
+url = "seaborn\seaborn_dataset02.csv"
 wine_df = pd.read_csv(url, sep=';')
 ```
 

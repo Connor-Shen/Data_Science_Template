@@ -18,10 +18,10 @@ import numpy as np
 
 ### Step 2. Load the dataset from the URL into a pandas DataFrame named "df".
 ```python
-URL = "https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data"
-column_names = ['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'species']
-df = pd.read_csv(URL, header=None, names=column_names)
+URL = "pandas\pandas_dataset03.csv"
+df = pd.read_csv(URL, sep=',')
 ```
+
 
 ### Step 3. Calculate and display the number of missing values in each column of the DataFrame "df".
 ```python

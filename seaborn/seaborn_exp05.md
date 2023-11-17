@@ -1,3 +1,12 @@
+---
+jupyter:
+  title: Plotting tasks using seaborn
+  dataset: cancer dataset
+  difficulty: Middle
+  module: seaborn
+  idx: 5
+---
+
 ### Step 1. Import necessary libraries.
 ```python
 import pandas as pd

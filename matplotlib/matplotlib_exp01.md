@@ -13,11 +13,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 ```
 
-### Step 2. Load the dataset from the URL "https://archive.ics.uci.edu/ml/machine-learning-databases/auto-mpg/auto-mpg.data" into a pandas DataFrame named "auto_mpg_df".
+### Step 2. Load the dataset from path into a pandas DataFrame named "auto_mpg_df".
 ```python
-url = "https://archive.ics.uci.edu/ml/machine-learning-databases/auto-mpg/auto-mpg.data"
-column_names = ["mpg", "cylinders", "displacement", "horsepower", "weight", "acceleration", "model year", "origin", "car name"]
-auto_mpg_df = pd.read_csv(url, delim_whitespace=True, names=column_names)
+url = "matplotlib\matplotlib_dataset01.csv"
+auto_mpg_df = pd.read_csv(url)
 ```
 
 ### Step 3. Display the first 5 rows of the DataFrame "auto_mpg_df".

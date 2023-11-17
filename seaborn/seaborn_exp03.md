@@ -1,3 +1,11 @@
+---
+jupyter:
+  title: Plotting tasks using seaborn
+  dataset: auto mpg dataset
+  difficulty: EASY
+  module: seaborn
+  idx: 3
+---
 
 ### Step 1. Import necessary libraries.
 ```python
@@ -8,9 +16,8 @@ import seaborn as sns
 
 ### Step 2. Load the dataset from the URL into a pandas DataFrame named `mpg_df`.
 ```python
-Dataset_Link = "https://archive.ics.uci.edu/ml/machine-learning-databases/auto-mpg/auto-mpg.data"
-column_names = ['mpg', 'cylinders', 'displacement', 'horsepower', 'weight', 'acceleration', 'model year', 'origin', 'car name']
-mpg_df = pd.read_csv(Dataset_Link, sep='\\s+', names=column_names)
+Dataset_Link = "seaborn\seaborn_dataset03.csv"
+mpg_df = pd.read_csv(Dataset_Link)
 ```
 
 ### Step 3. Display the first 5 rows of mpg_df.
