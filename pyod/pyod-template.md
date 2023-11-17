@@ -26,7 +26,7 @@ Args:
 
 ```
 
-### Step 4. Choose {Selected column name} and {Selected column name} for outlier detection. Split the two columns' data into features and training/test sets as {Test Size}. 
+### Step 4. Choose {Selected column name} and {Selected column name} for outlier detection. Split the two columns' data into features and training/test sets as {Test Size}. No y values are needed for unsupervised learning.
 ```python
 
 ```

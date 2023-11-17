@@ -33,11 +33,10 @@ scaler = StandardScaler()
 scaled_features = scaler.fit_transform(df[['sepal_length', 'sepal_width', 'petal_length', 'petal_width']])
 ```
 
-### Step 4. Choose "sepal_length" and "sepal_width" for outlier detection. Split the two columns' data into features and training/test sets as 0.3 (30%).
+### Step 4. Choose "sepal_length" and "sepal_width" for outlier detection. Split the two columns' data into features and training/test sets as 0.3 (30%). No y values are needed for unsupervised learning.
 ```python
 X = scaled_features[:, :2]  # Using only sepal_length and sepal_width
-y = df['species']
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+X_train, X_test = train_test_split(X, test_size=0.3, random_state=42)
 ```
 
 ### Step 5. Randomly choose three detectors and create a classifiers dictionary, using Outliers Fraction 0.1, Random State 42.
@@ -71,7 +70,7 @@ for i, (clf_name, clf) in enumerate(classifiers.items()):
     y_train_pred = clf.labels_  # binary labels (0: inliers, 1: outliers)
     y_train_scores = clf.decision_scores_  # raw outlier scores
     print(f"Training Data Evaluation for {clf_name}")
-    evaluate_print(clf_name, y_train, y_train_scores)
+    evaluate_print(clf_name, y_train_pred, y_train_scores)
     
     y_test_scores = clf.decision_function(X_test)  # outlier scores
     print(f"Test Data Evaluation for {clf_name}")
@@ -81,5 +80,5 @@ for i, (clf_name, clf) in enumerate(classifiers.items()):
 ### Step 9. Visualize the outlier scores by visualize function for the three detectors respectively.
 ```python
 for i, (clf_name, clf) in enumerate(classifiers.items()):
-    visualize(clf_name, X_train, y_train, X_test, y_test, y_train_pred, y_test_pred, show_figure=True)
+    visualize(clf_name, X_train, y_train_pred, X_test, y_test_pred, y_train_pred, y_test_pred, show_figure=True)
 ```
