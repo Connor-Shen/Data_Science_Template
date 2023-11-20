@@ -3,7 +3,7 @@ jupyter:
   title: Classification tasks in pytorch
   dataset: Forest Fires Dataset
   difficulty: Middle
-  model: linear regression
+  model: neural network
   module: pytorch
   idx: 4
 ---
@@ -21,39 +21,36 @@ import torch.nn as nn
 import torch.optim as optim
 ```
 
-## Step 2. Load the dataset.
-
-Dataset Link: [Forest Fires Dataset Download](https://archive.ics.uci.edu/ml/datasets/forest+fires)
+## Step 2. Load the dataset from path named "ForestFiresDF".
 
 ```python
-# Load the dataset directly using the UCI ML Repository URL
-forest_fires_df = pd.read_csv('https://archive.ics.uci.edu/ml/machine-learning-databases/forest-fires/forestfires.csv')
+
+path = "pytorch/pytorch_dataset04.csv"
+ForestFiresDF = pd.read_csv(path)
 ```
 
-## Step 3. Convert the data into a pandas dataframe and preprocess it for the regression model.
+## Step 3. Convert the data into a pandas dataframe and preprocess. Convert area > 0.1 to 1 and area <= 0.1 to 0.
 
 ```python
-# Assuming the dataset includes features and 'area' as the target variable
-ForestFiresDF = forest_fires_df
 # Convert categorical features to dummy variables
-ForestFiresDF = pd.get_dummies(ForestFiresDF)
+ForestFiresDF['area'] = ForestFiresDF['area'].apply(lambda x: 1 if x > 0.1 else 0)
 ```
 
-## Step 4. Split the dataset into features and target variable, then into training and testing sets.
+## Step 4. Normalize the data using Standard Scaling. Split the dataset into features and target variable, then into training and testing sets.
 
 ```python
 X = ForestFiresDF.drop('area', axis=1)
 y = ForestFiresDF['area']
 TestSize = 0.2
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=TestSize)
-```
-
-## Step 5. Standardize the features and convert the data into PyTorch tensors.
-
-```python
 scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
+```
+
+## Step 5. Convert the numpy arrays into PyTorch tensors.
+
+```python
 
 train_features = torch.tensor(X_train_scaled, dtype=torch.float32)
 test_features = torch.tensor(X_test_scaled, dtype=torch.float32)
@@ -61,7 +58,7 @@ train_targets = torch.tensor(y_train.values, dtype=torch.float32)
 test_targets = torch.tensor(y_test.values, dtype=torch.float32)
 ```
 
-## Step 6. Define a neural network for regression.
+## Step 6. Define a simple neural network model with appropriate inputs and 1 output.
 
 ```python
 class FireAreaPredictor(nn.Module):
@@ -81,14 +78,14 @@ input_size = X_train.shape[1]
 model = FireAreaPredictor(input_size)
 ```
 
-## Step 7. Define the loss function and optimizer.
+## Step 7. Define the MSELoss as the loss function and Adam as the optimizer with learning rate 0.01.
 
 ```python
 criterion = nn.MSELoss()  # Mean Squared Error Loss for regression tasks
 optimizer = optim.Adam(model.parameters(), lr=0.01)
 ```
 
-## Step 8. Train the model.
+## Step 8. Train the model for 30 epochs.
 
 ```python
 Epochs = 30

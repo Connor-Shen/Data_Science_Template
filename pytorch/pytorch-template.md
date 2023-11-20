@@ -4,6 +4,7 @@ Args:
 {Dataset Description} -> "str": Description of the dataset
 {DataFrame Name} -> "str": Name of the DataFrame
 {Model name} -> "str": Name of the model used in this task
+{Scaling} -> "str": The scaling method used in this task
 {Selected column name} -> "str": Name of the selected column，can be changed according to the needs of different steps
 {Test Size} -> "float": Proportion of the dataset to include in the test split, range from 0.1-0.2
 {Epochs} -> "int": Number of epochs for training, range from 10-30
@@ -17,7 +18,7 @@ Step 1. Import necessary libraries.
 
 ```
 
-Step 2. Load the dataset from {Dataset Link}.
+Step 2. Load the dataset named {Dataset Name}.
 ```python
 
 ```
@@ -27,7 +28,7 @@ Step 3. Convert the data into a pandas dataframe and add the target variable to 
 
 ```
 
-Step 4. Normalize the data of {Selected column name} using Min-Max Scaling and split it into training and testing sets with test size being {Test Size}.
+Step 4. Normalize the data of {Selected column name} using {Scaling} and split it into training and testing sets with test size being {Test Size}.
 ```python
 
 ```

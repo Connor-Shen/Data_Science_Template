@@ -3,7 +3,7 @@ jupyter:
   title: Classification tasks in pytorch
   dataset: iris
   difficulty: EASY
-  model: linear regression
+  model: neural network
   module: pytorch
   idx: 1
 ---
@@ -19,9 +19,9 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, recall_score
 ```
 
-## Step 2. Load the dataset from "https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data".
+## Step 2. Load the dataset from path named "iris_df".
 ```python
-url = "https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data"
+url = "pytorch/pytorch_dataset01.csv"
 column_names = ["sepal_length", "sepal_width", "petal_length", "petal_width", "class"]
 iris_df = pd.read_csv(url, names=column_names)
 ```
@@ -51,7 +51,7 @@ X_test_tensor = torch.FloatTensor(X_test)
 y_test_tensor = torch.LongTensor(y_test)
 ```
 
-## Step 6. Define a simple linear regression model with appropriate inputs and 1 output.
+## Step 6. Define a simple neural network model with appropriate inputs and 1 output.
 ```python
 class SimpleNN(nn.Module):
     def __init__(self, input_dim):

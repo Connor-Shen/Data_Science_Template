@@ -3,7 +3,7 @@ jupyter:
   title: Classification tasks in pytorch
   dataset: Breast Cancer Wisconsin
   difficulty: EASY
-  model: linear regression
+  model: neural network
   module: pytorch
   idx: 2
 ---
@@ -19,23 +19,22 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, recall_score
 ```
 
-## Step 2. Load the dataset from "https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/breast-cancer-wisconsin.data".
+## Step 2. Load the dataset from path named "cancer_df".
 ```python
-url = "https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/breast-cancer-wisconsin.data"
-column_names = ["id", "clump_thickness", "cell_size", "cell_shape", "marginal_adhesion", "epithelial_cell_size", "bare_nuclei", "bland_chromatin", "normal_nucleoli", "mitoses", "class"]
-cancer_df = pd.read_csv(url, names=column_names, na_values="?")
+url = "pytorch/pytorch_dataset02.csv"
+cancer_df = pd.read_csv(url)
 cancer_df.dropna(inplace=True)  # Removing rows with missing values for simplicity
 ```
 
 ## Step 3. Convert the data into a pandas dataframe and add the target variable to the dataframe named "cancer_df". Convert benign to 0 and malignant to 1.
 ```python
-cancer_df["class"] = cancer_df["class"].map({2: 0, 4: 1})
+cancer_df["diagnosis"] = cancer_df["diagnosis"].map({B: 0, M: 1})
 ```
 
 ## Step 4. Normalize the data using Min-Max Scaling and split it into training and testing sets with test size being 0.15.
 ```python
-X = cancer_df.drop(["id", "class"], axis=1).values
-y = cancer_df["class"].values
+X = cancer_df.drop(["id", "diagnosis"], axis=1).values
+y = cancer_df["diagnosis"].values
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.15, random_state=42)
 scaler = MinMaxScaler()
 X_train = scaler.fit_transform(X_train)

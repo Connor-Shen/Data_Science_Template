@@ -3,7 +3,7 @@ jupyter:
   title: Classification tasks in pytorch
   dataset: pima-indians-diabetes
   difficulty: Middle
-  model: linear regression
+  model: MLP
   module: pytorch
   idx: 5
 ---
@@ -22,7 +22,7 @@ from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, r
 import matplotlib.pyplot as plt
 ```
 
-## Step 2. Load the dataset.
+## Step 2. Load the dataset named "diabetes_df".
 
 ```python
 # Replace 'path_to_dataset.csv' with the actual path of the downloaded dataset
